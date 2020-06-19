@@ -1,19 +1,37 @@
-
+/* NAV */
 .container.nav_bar {
     background-color: #2c3e50;
     height: 100px;
-}
-.page_title a{
-    color: white;
     vertical-align: middle;
+    font-size: 20px;
+    color: white;
+    line-height: 100px;
 }
-.page_title a:hover{
+.page_title a {
     text-decoration: none;
+    color: white;
 }
+.menu_list a {
+    text-decoration: none;
+    color: white;
+}
+.menu_link {
+    float: left;
+    list-style-type: none;
+    text-align: center;
+}
+
+/* MAIN BANNER*/
 .container.main_banner {
     background-color: #1abc9c;
     height: 700px;
 }
+.content_box {
+    border: 1px solid black;
+    height: 300px;
+    margin-top: 100px;
+}
+/* PORTFOLIO */
 .container.portfolio {
     height: 600px;
 }
