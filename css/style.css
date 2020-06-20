@@ -10,6 +10,8 @@
 .page_title a {
     text-decoration: none;
     color: white;
+    font-size: 30px;
+    font-weight: 600;
 }
 .menu_list a {
     text-decoration: none;
@@ -24,17 +26,52 @@
 /* MAIN BANNER*/
 .container.main_banner {
     background-color: #1abc9c;
-    height: 700px;
+    color: white;
 }
+
 .content_box {
-    border: 1px solid black;
-    height: 300px;
+    height: 600px;
     margin-top: 100px;
+    text-align: center;
+}
+.banner_title{
+    font-size: 60px;
+    font-weight: 700;
+}
+.star_line {
+    position: relative;
+}
+.deco_line, .deco_star{
+    display: inline-block;
+}
+.star_line {
+    height : 20px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+.glyphicon-star{
+    font-size: 40px;
+    vertical-align: middle;
+}
+.profession h2{
+    font-size: 20px;
 }
 /* PORTFOLIO */
 .container.portfolio {
-    height: 600px;
+    color: #333333
 }
+.portfolio_title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+}
+.pic {
+    border: 1px solid black;
+    float: left;
+    height: 200px;
+}
+
+/* ABOUT */
 .container.about {
     height: 400px;
     background-color: #1abc9c;
