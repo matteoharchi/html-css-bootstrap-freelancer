@@ -91,11 +91,18 @@
 }
 
 
-
+/* CONTACT ME */
 
 .container.contact_me {
     height: 800px;
 }
+.contact_form {
+    border: none;
+    line-height: 60px;
+    font-size: 25px;
+}
+
+
 .container.footer_contacts {
     height: 400px;
     background-color: #2c3e50;
