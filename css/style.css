@@ -119,7 +119,7 @@ nav {
 }
 /* CONTACT ME */
 .container.contact_me {
-    height: 800px;
+    /* height: 800px; */
 }
 .contact_form {
     border: none;
@@ -130,6 +130,7 @@ button.contact_form {
     background-color: #1abc9c;
     color: white;
     border-radius: 5px;
+    margin-bottom: 30px;
 }
 /* FOOTER CONTACTS */
 .container.footer_contacts {
@@ -193,5 +194,10 @@ button.contact_form {
     }
     .profession h2{
         font-size: 10px;
+    }
+}
+@media all and (min-width:921px) {
+    .social_icon{
+      font-size: 30px;
     }
 }
