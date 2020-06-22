@@ -13,43 +13,40 @@ nav {
     line-height: 70px;
     max-width: 1140px;
 }
-.page_title a {
+.ms_page_title a {
     text-decoration: none;
     color: white;
     font-size: 25px;
     font-weight: 600;
 }
-.menu_list a {
+.ms_menu_list a {
     text-decoration: none;
     color: white;
 }
-.menu_link {
+.ms_menu_link {
     float: left;
     list-style-type: none;
     text-align: center;
 }
-.mobile_menu {
+.ms_mobile_menu {
     display: none;
 }
 
 /* MAIN BANNER*/
-.container.main_banner {
+.container.ms_main_banner {
     background-color: #1abc9c;
     color: white;
 }
-.banner_image {
+.ms_banner_image {
     margin-top: 30px;
 }
-.banner_title{
+.ms_banner_title{
     font-size: 50px;
     font-weight: 700;
     text-align: center;
 }
-.deco_line, .deco_star{
-    display: inline-block;
-}
-.banner_star_line::before,
-.banner_star_line::after {
+.ms_banner_star_line::before,
+.ms_banner_star_line::after {
     content: "";
     width: 15%;
     height: 3px;
@@ -61,7 +58,7 @@ nav {
     display: inline-block;
     vertical-align: bottom;
 }
-.banner_star_line{
+.ms_banner_star_line{
     position: relative;
     line-height: 30px;
     text-align: center;
@@ -71,7 +68,7 @@ nav {
     vertical-align: top;
     text-align: center;
 }
-.profession h2{
+.ms_profession h2{
     font-size: 25px;
     margin-bottom: 50px;
 }
@@ -79,34 +76,56 @@ nav {
 .container.portfolio {
     color: #333333;
 }
-.section_title {
+.ms_section_title {
     text-transform: uppercase;
     text-align: center;
     font-size: 40px;
     margin-top: 50px;
 }
-.pic_row{
+.ms_pic_row{
     margin-top:10px;
     margin-bottom: 30px;
 }
-.pic {
+.ms_pic {
     float: left;
 }
-.pic img{
+
+.ms_pic img{
     width: 100%;
+    height: 100%;
     padding-bottom: 10px;
     padding-top: 10px;
+    position: relative;
 }
-
+.ms_hover_green {
+  width: calc(100% - 30px);
+  height: calc(100% - 20px);
+  background-color: rgba(26, 187, 156, 0.7);
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+}
+.glyphicon-plus{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: white;
+}
+.ms_pic:hover .ms_hover_green {
+  display: block;
+}
 /* ABOUT */
 .container.about {
     background-color: #1abc9c;
     color: white;
 }
-.text_container {
+.ms_text_container {
     font-size: 20px;
 }
-.download_button {
+.ms_download_button {
     border: 2px solid white;
     border-radius: 5px;
     height: 60px;
@@ -118,86 +137,83 @@ nav {
     text-align: center;
 }
 /* CONTACT ME */
-.container.contact_me {
-    /* height: 800px; */
-}
-.contact_form {
+.ms_contact_form {
     border: none;
     line-height: 60px;
     font-size: 25px;
 }
-button.contact_form {
+button.ms_contact_form {
     background-color: #1abc9c;
     color: white;
     border-radius: 5px;
     margin-bottom: 30px;
 }
 /* FOOTER CONTACTS */
-.container.footer_contacts {
+.container.ms_footer_contacts {
     background-color: #2c3e50;
     color: white;
     font-size: 15px;
 }
-.footer_contact{
+.ms_footer_contact{
     margin-top: 40px;
     margin-bottom: 40px;
 }
-.social_title {
+.ms_social_title {
     margin-bottom: 20px;
 }
-.social_icon{
+.ms_social_icon{
     border: 1px solid white;
     border-radius: 50%;
     padding: 20px;
 }
 
-.container.footer_copyright {
+.container.ms_footer_copyright {
     height: 100px;
     background-color: #1a252f;
     color: white;
 }
-.copyright {
+.ms_copyright {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 @media all and (max-width:991px) {
 
-    .page_title {
+    .ms_page_title {
         font-size: 15px;
         height: 70px;
         line-height: 70px;
     }
-    .menu_link {
+    .ms_menu_link {
         height: 70px;
         line-height: 70px;
         vertical-align: middle;
     }
-    .download_button{
+    .ms_download_button{
         font-size: 15px;
     }
-    .social_icon{
+    .ms_social_icon{
         padding: 5px;
     }
 }
 @media all and (max-width:767px) {
-    .menu_list {
+    .ms_menu_list {
         display: none;
     }
-    .mobile_menu {
+    .ms_mobile_menu {
         display: block;
     }
-    .page_title a{
+    .ms_page_title a{
         font-size: 15px;
     }
-    .banner_title {
+    .ms_banner_title {
         font-size: 30px;
     }
-    .profession h2{
+    .ms_profession h2{
         font-size: 10px;
     }
 }
 @media all and (min-width:921px) {
-    .social_icon{
+    .ms_social_icon{
       font-size: 30px;
     }
 }
