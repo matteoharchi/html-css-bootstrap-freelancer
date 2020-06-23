@@ -176,6 +176,11 @@ button.ms_contact_form {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+@media all and (min-width:921px) {
+    .ms_social_icon{
+      font-size: 30px;
+    }
+}
 @media all and (max-width:991px) {
 
     .ms_page_title {
@@ -195,6 +200,7 @@ button.ms_contact_form {
         padding: 5px;
     }
 }
+
 @media all and (max-width:767px) {
     .ms_menu_list {
         display: none;
@@ -212,8 +218,9 @@ button.ms_contact_form {
         font-size: 10px;
     }
 }
-@media all and (min-width:921px) {
+@media all (max-width:767px) {
     .ms_social_icon{
-      font-size: 30px;
+        padding-right: 3px;
+        padding-left: 3px;
     }
 }
